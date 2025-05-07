@@ -30,7 +30,7 @@ These are merged and preprocessed to extract:
 
 ---
 
-## 🛠️ How It Works
+
 
 ### Data Preprocessing:
 
@@ -38,27 +38,6 @@ These are merged and preprocessed to extract:
 - Combine all into a single `tags` field
 - Apply **Porter stemming** to normalize the text
 
-### Vectorization & Similarity:
-
-- Use `CountVectorizer` with max 5000 features and English stop words
-- Compute **cosine similarity** between movie vectors
-
-### Recommendation Logic:
-
-- Based on the selected movie, sort other movies by similarity score
-- Return the **top 5 most similar movies**
-
-### Poster & Details Fetching:
-
-- Use **TMDb API** to get posters and movie metadata via REST calls
-
-### Streamlit UI:
-
-- Dropdown to select a movie
-- "Recommend" button to fetch similar movies
-- Buttons and image cards for each recommendation with full details on click
-
----
 
 ## 🧪 Requirements
 
@@ -66,16 +45,16 @@ Install dependencies using pip:
 
 ```bash
 pip install pandas numpy scikit-learn nltk streamlit requests
+```
 
 
 
-▶ Running the App
+▶️ Running the App
 Step 1: Clone the repository or download the files
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/movie-recommender-system.git
-cd movie-recommender-system
+```
+git clone https://github.com/jyotiraut/recommendation.git
+cd recommendation-main
+```
 Step 2: Add the Dataset
 Place tmdb_5000_movies.csv and tmdb_5000_credits.csv in the project folder.
 Download them from Kaggle - TMDb Movie Dataset
@@ -83,19 +62,18 @@ Download them from Kaggle - TMDb Movie Dataset
 Step 3: Preprocess the Data
 Run the preprocessing script to generate movie_dict.pkl and similarity.pkl:
 
-bash
-Copy
-Edit
-python preprocessing.py
+```bash
+movie-recommender-system.ipynb
+```
 This script processes and vectorizes the movie data.
 
 Step 4: Run the App
 Launch the Streamlit web app:
 
-bash
-Copy
-Edit
+```bash
+
 streamlit run app.py
+```
 Step 5: Use the App
 Select a movie
 
