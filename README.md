@@ -52,7 +52,7 @@ pip install pandas numpy scikit-learn nltk streamlit requests
 ▶️ Running the App
 Step 1: Clone the repository or download the files
 ```
-git clone https://github.com/jyotiraut/recommendation.git
+git clone https://github.com/jyotiraut/movie_recommendation.git
 cd recommendation-main
 ```
 Step 2: Add the Dataset
