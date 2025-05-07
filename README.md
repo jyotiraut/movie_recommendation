@@ -66,3 +66,42 @@ Install dependencies using pip:
 
 ```bash
 pip install pandas numpy scikit-learn nltk streamlit requests
+
+
+
+▶ Running the App
+Step 1: Clone the repository or download the files
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/movie-recommender-system.git
+cd movie-recommender-system
+Step 2: Add the Dataset
+Place tmdb_5000_movies.csv and tmdb_5000_credits.csv in the project folder.
+Download them from Kaggle - TMDb Movie Dataset
+
+Step 3: Preprocess the Data
+Run the preprocessing script to generate movie_dict.pkl and similarity.pkl:
+
+bash
+Copy
+Edit
+python preprocessing.py
+This script processes and vectorizes the movie data.
+
+Step 4: Run the App
+Launch the Streamlit web app:
+
+bash
+Copy
+Edit
+streamlit run app.py
+Step 5: Use the App
+Select a movie
+
+Click Recommend
+
+View recommended movies with posters and details
+
+📸 Results
+<img width="592" alt="image" src="https://github.com/user-attachments/assets/9649711c-d4ff-4aed-86bc-3447244939be" />
