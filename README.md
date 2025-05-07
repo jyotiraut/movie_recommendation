@@ -56,8 +56,9 @@ git clone https://github.com/jyotiraut/recommendation.git
 cd recommendation-main
 ```
 Step 2: Add the Dataset
-Place tmdb_5000_movies.csv and tmdb_5000_credits.csv in the project folder.
-Download them from Kaggle - TMDb Movie Dataset
+Place `tmdb_5000_movies.csv` and `tmdb_5000_credits.csv` in the project folder.  
+Download them from [Kaggle - TMDb Movie Dataset](https://www.kaggle.com/datasets/tmdb/tmdb-movie-dataset)
+
 
 Step 3: Preprocess the Data
 Run the preprocessing script to generate movie_dict.pkl and similarity.pkl:
